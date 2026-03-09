@@ -1,0 +1,104 @@
+# 🤖 Gerador de README com IA
+
+Bem-vindo ao **Gerador de README com IA**! Esta é uma ferramenta poderosa para automatizar a criação de READMEs detalhados e profissionais para os seus projetos Python. Utilizando inteligência artificial, ele analisa a estrutura do seu projeto e gera conteúdo relevante, poupando seu tempo e garantindo que sua documentação esteja sempre atualizada.
+
+## ✨ Recursos
+
+*   **Geração de READMEs assistida por IA:** Crie READMEs completos com base na análise do seu código e estrutura de arquivos.
+*   **Análise Automática do Projeto:** O `scanner.py` examina o seu diretório para entender a composição do projeto.
+*   **Interface de Linha de Comando (CLI):** Fácil de usar através do terminal com o `cli.py`.
+*   **Configuração via Variáveis de Ambiente:** Gerencie chaves de API e outras configurações sensíveis usando o arquivo `.env`.
+*   **Extensível:** Estrutura modular permite fácil adição de novas funcionalidades ou integração com diferentes modelos de IA.
+
+## 🚀 Instalação
+
+Siga estes passos para configurar e executar o Gerador de README em seu ambiente local:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone <URL_DO_SEU_REPOSITORIO>
+    cd gerador-readme
+    ```
+
+2.  **Crie e ative um ambiente virtual (recomendado):**
+    ```bash
+    python -m venv venv
+    # No Windows
+    .\venv\Scripts\activate
+    # No macOS/Linux
+    source venv/bin/activate
+    ```
+
+3.  **Instale as dependências:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+## ⚙️ Configuração
+
+Para usar a funcionalidade de IA, você precisará de uma chave de API para o serviço de IA que está sendo utilizado (por exemplo, OpenAI).
+
+1.  **Crie um arquivo `.env` na raiz do seu projeto** (na mesma pasta que `main.py`).
+2.  **Adicione sua chave de API** e quaisquer outras configurações necessárias, como no exemplo:
+
+    ```env
+    OPENAI_API_KEY=sua_chave_secreta_aqui
+    # Outras variáveis de ambiente podem ser adicionadas aqui
+    ```
+
+    *Certifique-se de que o arquivo `.env` esteja listado no seu `.gitignore` para evitar que suas chaves de API sejam versionadas.*
+
+## 💡 Uso
+
+Após a instalação e configuração, você pode gerar um README para o seu projeto:
+
+1.  **Navegue até a raiz do seu projeto** (onde o `main.py` e `.env` estão).
+
+2.  **Execute o gerador:**
+    ```bash
+    python main.py
+    ```
+
+    Ou, se for uma aplicação CLI empacotada:
+    ```bash
+    gerador-readme generate
+    ```
+
+    O script irá analisar o seu projeto e gerar um arquivo `README.md` na raiz do seu diretório.
+
+## 📂 Estrutura do Projeto
+
+```
+.
+├── .env                  # Variáveis de ambiente
+├── .vs/                  # Arquivos de solução do Visual Studio (ignorados)
+├── __pycache__/          # Cache de bytecode Python (ignorados)
+├── gerador-readme.pyproj # Projeto Python do Visual Studio
+├── gerador-readme.slnx   # Solução do Visual Studio
+├── generator.py          # Lógica principal de geração
+├── main.py               # Ponto de entrada da aplicação
+├── readme_gen/           # Pacote principal da lógica do gerador
+│   ├── ai_generator.py   # Módulo para interação com APIs de IA
+│   ├── cli.py            # Módulo da interface de linha de comando
+│   ├── scanner.py        # Módulo para escanear a estrutura do projeto
+│   ├── __init__.py
+│   └── __pycache__/
+├── readme_gen.egg-info/  # Metadados do pacote Python (ignorados)
+├── requirements.txt      # Dependências do projeto
+├── setup.py              # Script de setup para distribuição do pacote
+└── README.md             # Este arquivo README (gerado por esta ferramenta!)
+```
+
+## 🤝 Contribuição
+
+Sinta-se à vontade para contribuir com este projeto! Se você tiver sugestões, relatórios de bugs ou quiser implementar novos recursos, por favor:
+
+1.  Faça um fork do repositório.
+2.  Crie uma nova branch (`git checkout -b feature/minha-feature`).
+3.  Faça suas alterações e commit-as (`git commit -m 'feat: Minha nova feature'`).
+4.  Envie para a branch (`git push origin feature/minha-feature`).
+5.  Abra um Pull Request.
+
+## 📄 Licença
+
+Este projeto está licenciado sob a [SUA LICENÇA AQUI, por exemplo, MIT License](LICENSE).

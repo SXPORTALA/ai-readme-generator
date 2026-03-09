@@ -1,0 +1,12 @@
+README.md
+setup.py
+readme_gen/__init__.py
+readme_gen/ai_generator.py
+readme_gen/cli.py
+readme_gen/scanner.py
+readme_gen.egg-info/PKG-INFO
+readme_gen.egg-info/SOURCES.txt
+readme_gen.egg-info/dependency_links.txt
+readme_gen.egg-info/entry_points.txt
+readme_gen.egg-info/requires.txt
+readme_gen.egg-info/top_level.txt

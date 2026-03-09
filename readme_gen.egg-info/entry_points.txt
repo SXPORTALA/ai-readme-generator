@@ -1,0 +1,2 @@
+[console_scripts]
+readme-gen = readme_gen.cli:app
