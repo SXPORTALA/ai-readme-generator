@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🤖 Gerador de README com IA
 
 Bem-vindo ao **Gerador de README com IA**! Esta é uma ferramenta poderosa para automatizar a criação de READMEs detalhados e profissionais para os seus projetos Python. Utilizando inteligência artificial, ele analisa a estrutura do seu projeto e gera conteúdo relevante, poupando seu tempo e garantindo que sua documentação esteja sempre atualizada.
