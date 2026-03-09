@@ -23,7 +23,7 @@ A ferramenta analisa a estrutura de um projeto e gera documentação automaticam
 Clone o repositório:
 
 ```bash
-git clone https://github.com/SEU-USUARIO/gerador-readme.git
+git clone https://github.com/SXPORTALA/gerador-readme.git
 cd gerador-readme
 ```
 
